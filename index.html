@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="./style.css" rel="stylesheet">
+    <title>Nature Sudoku</title>
+    <link rel="icon"  href="http://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Sudoku-by-L2G-20050714_solution.svg/200px-Sudoku-by-L2G-20050714_solution.svg.png">
+
+</head>
+<body>
+
+    <div id="board"
+        class="vh-100 boardC m-0 p-0 container-fluid row d-flex justify-content-center align-items-center bgo3C">
+
+        <!-- // ---------- upper_section ---------- //  -->
+
+        <div id="upper_section" class="upper_sectionC w-100 row p-0 m-0 justify-content-center align-self-start">
+
+            <!-- volume div  -->
+
+            <div class="col-1 p-0 m-0 d-flex justify-content-center">
+
+                <button id="musicOn" class="musicOnC upper_sectionBtns hide" type="button" onclick="soundOff()"><svg
+                        viewBox="0 0 24 24" fill="white" width="30px" height="30px">
+                        <path d="M0 0h24v24H0V0z" fill="none" />
+                        <path
+                            d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z" />
+                    </svg>
+                </button>
+
+                <button id="musicOff" class="musicOffC upper_sectionBtns" type="button" onclick="soundOn()"><svg
+                        viewBox="0 0 24 24" fill="white" width="30px" height="30px">
+                        <path d="M0 0h24v24H0V0z" fill="none" />
+                        <path
+                            d="M4.34 2.93L2.93 4.34 7.29 8.7 7 9H3v6h4l5 5v-6.59l4.18 4.18c-.65.49-1.38.88-2.18 1.11v2.06c1.34-.3 2.57-.92 3.61-1.75l2.05 2.05 1.41-1.41L4.34 2.93zM19 12c0 .82-.15 1.61-.41 2.34l1.53 1.53c.56-1.17.88-2.48.88-3.87 0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zm-7-8l-1.88 1.88L12 7.76zm4.5 8c0-1.77-1.02-3.29-2.5-4.03v1.79l2.48 2.48c.01-.08.02-.16.02-.24z" />
+                    </svg>
+                </button>
+
+            </div>
+
+            <div class="col-6 p-0 m-0"></div>
+
+            <!-- AboutTheGameSpan  -->
+
+            <div id="AboutTheGameSpan" class="col-2 p-0 mx-0 my-0 d-flex align-items-center">
+                <span id="AboutTheGameSpanText"
+                    class="AboutTheGameSpanC p-0 mx-0 my-0 d-flex align-items-center hide">About the game</span>
+            </div>
+
+            <!-- ChangeBackgroundSpan  -->
+
+            <div id="ChangeBackgroundSpan" class="col-2 p-0 mx-0 my-0 d-flex align-items-center">
+                <span id="ChangeBackgroundSpanText"
+                    class="ChangeBackgroundSpanC p-0 mx-0 my-0 d-flex align-items-center hide">Change
+                    background</span>
+            </div>
+
+            <!-- menuBtn div  -->
+
+            <div class="col-1 p-0 m-0 d-flex justify-content-center">
+                <button id="menuBtn" class="menuBtnC upper_sectionBtns" type="button" onclick="menu()">
+                    <svg viewBox="0 0 24 24" fill="white" width="30px" height="30px">
+                        <path d="M0 0h24v24H0V0z" fill="none" />
+                        <path d="M4 15h16v-2H4v2zm0 4h16v-2H4v2zm0-8h16V9H4v2zm0-6v2h16V5H4z" /></svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- photoSelectNav div  -->
+
+        <div id="photoSelectNav" class="photoSelectNavC w-100 p-0 m-0 row d-flex align-items-center hide">
+
+            <div id="bgo1" class="col mx-1 my-1 images bgo1C" value="valley"></div>
+            <div id="bgo2" class="col mx-1 my-1 images bgo2C" value="mountains"></div>
+            <div id="bgo3" class="col mx-1 my-1 images bgo3C" value="sunset"></div>
+            <div id="bgo4" class="col mx-1 my-1 images bgo4C" value="waterfall"></div>
+            <div id="bgo5" class="col mx-1 my-1 images bgo5C" value="fall"></div>
+
+        </div>
+
+        <!-- container_paragraph div  -->
+
+        <div id="container_paragraph"
+            class="container_paragraphC px-5 mt-5 h-75 d-flex flex-column justify-content-center hide">
+
+            <p class="welcomeTo p-0 m-0">
+                Hello, and welcome to "Nature Sudoku" game. <br> <br>
+            </p>
+
+            <p class="presentation p-0 m-0">
+                As well known, this kind of game requires a lot of concentration and focus. <br>
+                so we tried to increase them to a higher level by playing relaxing music, <br>
+                with extraordinary calming pictures in the background. we believe those are helpful in making the
+                player<br>
+                think more efficiently and rapidly, while also creating a relaxing atmosphere to think clearly. <br><br>
+            </p>
+
+            <p class="game-instructions p-0 m-0">
+                Some instruction you may need:
+                <br>
+                1 - toggling the music on or off :<br>
+                at the top left corner of the page
+                There is a volume button. pressing it
+                turns the sounds on or off accordingly.
+                <br>
+                2 - changing the background:<br>
+                at the top right corner of the page
+                There is a menu button. pressing
+                it opens the "change background"
+                option.
+                <br><br>
+            </p>
+            <p class="about-the-editors p-0 m-0">
+                About the editors: <br>
+                We are Mahmoud Kharbat and Dotan Ahrak.
+                two front-end developers.
+                we're students at SVCOLLEGE in a front-end
+                course.<br>
+                we developed this site as part of
+                different projects that we're tasked to do.<br>
+                We hope that you enjoyed visiting our website
+                and playing our "Nature Sudoku" game.
+            </p>
+        </div>
+
+        <!-- // ---------- openPage ---------- //  -->
+
+        <div id="openPage" class="openPageC w-100 h-100 p-0 m-0 row flex-column d-flex align-items-center">
+
+            <span id="welcomeSpan" class="welcomeSpanC p-0 m-0">Nature Sudoku</span>
+
+            <form id="registerForm"
+                class="registerFormC p-0 mx-0 d-flex flex-column justify-content-center align-items-center"
+                action="submit" autocomplete="off">
+                <input id="userNameInput" class="userNameInputC regInputs hover my-1" placeholder="User name"
+                    type="text">
+                <span id="errorMsgUserName" class="errorMsgUserNameC errMsges"></span>
+                <input id="passwordInput" class="passwordInputC regInputs hover my-1" placeholder="Password"
+                    type="password">
+                <span id="errorMsgPassword" class="errorMsgPasswordC errMsges"></span>
+                <button id="submitBtnRegForm" class="submitBtnRegFormC hover EnterbtnC my-1"
+                    type="submit">Login</button>
+
+            </form>
+        </div>
+
+        <!-- // ---------- difficultyPage ---------- //  -->
+
+        <div id="difficultyPage"
+            class="difficultyPageC hide w-100 h-100 p-0 m-0 row flex-column d-flex align-items-center">
+
+            <span id="welcomePlayerNameSpan" class="welcomePlayerNameSpanC"></span>
+            <span id="LevelDifficultySpan" class="LevelDifficultySpanC">Level difficulty</span>
+
+            <div id="difBtsGroupDiv"
+                class="difBtsGroupDivC w-100 p-0 m-0 row d-flex justify-content-center align-items-center">
+
+                <div id="difBtn1" class="difBts p-0 hover he-30 d-flex justify-content-center align-items-center">Easy
+                </div>
+                <div id="difBtn2" class="difBts p-0 hover he-30 d-flex justify-content-center align-items-center">Medium
+                </div>
+                <div id="difBtn3" class="difBts p-0 hover he-30 d-flex justify-content-center align-items-center">Hard
+                </div>
+            </div>
+        </div>
+
+        <!-- // ---------- mainPage ---------- //  -->
+
+        <div id="main" class="mainC p-0 m-0 hide row d-flex justify-content-center align-items-center">
+
+            <span id="goodLuck" class="goodLuckC p-0 m-0 w-100 d-flex justify-content-center"></span>
+
+            <div id="circlesDivID"
+                class=" circlesDiv row my-1 mx-0 p-0 col-12 d-flex justify-content-center align-items-center">
+            </div>
+
+            <div id="gameBoard" class="gameBoardC my-1 mx-0 p-0 row d-flex justify-content-center align-items-center">
+            </div>
+
+            <div class="m-0 p-0 container-fluid my-1 mx-0 d-flex justify-content-center align-items-center">
+
+                <button onclick="deleteTargetCol()" type="button"
+                    class="btn gameBtns mx-3 he-30 hover d-flex justify-content-center align-items-center">Del</button>
+
+                <button onclick="resetLevelFunction()" type="button"
+                    class="btn gameBtns mx-3 he-30 hover d-flex justify-content-center align-items-center">Reset</button>
+
+                <button onclick="FinishLevelFunction()" type="button"
+                    class="btn gameBtns mx-3 he-30 hover d-flex justify-content-center align-items-center">Finish</button>
+
+            </div>
+        </div>
+
+        <!-- // ---------- music (paste to board) ---------- //  -->
+
+        <audio id="music" autoplay loop controls style="visibility: hidden;">
+            <source src="relaxing-music.mp3" type="audio/mp3">
+        </audio>
+
+    </div>
+
+    <script src="sudokuBoards.js"></script>
+    <script src="code.js"></script>
+
+</body>
+
+</html>

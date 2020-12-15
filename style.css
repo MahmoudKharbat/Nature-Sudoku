@@ -1,0 +1,634 @@
+body,
+html {
+
+    width: auto;
+    height: 100vh;
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
+}
+
+#board {
+
+    background-color: rgb(210, 210, 210);
+    cursor: default;
+}
+
+p {
+    text-align: center;
+}
+
+.upper_sectionC {
+
+    height: 56px;
+}
+
+.upper_sectionBtns {
+
+    background: transparent;
+    border: none;
+}
+
+.photoSelectNavC,
+.container_paragraphC,
+.upper_sectionBtns,
+.openPageC,
+.difficultyPageC,
+.mainC,
+.AboutTheGameSpanC,
+.ChangeBackgroundSpanC {
+    animation: apperance 1s ease-in;
+}
+
+@keyframes apperance {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+.ChangeBackgroundSpanC {
+    cursor: pointer;
+    color: white;
+}
+
+.AboutTheGameSpanC {
+    cursor: pointer;
+    color: white;
+}
+
+.welcomeSpanC {
+
+    color: rgb(255, 255, 255);
+    font-size: 100px;
+    margin-top: 16px;
+}
+
+.registerForm {
+
+    margin-top: 32px;
+}
+
+.regInputs {
+
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 25px;
+    width: 150px;
+    height: 30px;
+    background: transparent;
+    text-align: center;
+    font-size: small;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+.upper_sectionBtns,
+.regInputs,
+.EnterbtnC:focus {
+    outline: none !important;
+    background: transparent;
+}
+
+input[type="text"].regInputs::-webkit-input-placeholder {
+
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: BlinkMacSystemFont,
+        Helvetica,
+        Arial,
+        sans-serif;
+}
+
+input[type="password"].regInputs::-webkit-input-placeholder {
+
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: BlinkMacSystemFont,
+        Helvetica,
+        Arial,
+        sans-serif;
+}
+
+.EnterbtnC {
+    border: 2px solid rgb(255, 255, 255);
+    background: transparent;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    border-radius: 25px;
+    height: 30px;
+}
+
+.images {
+
+    cursor: pointer;
+    height: 150px;
+}
+
+.bgo1C {
+
+    background-image: url("https://psmag.com/.image/t_share/MTU4ODkyOTM0OTMyOTk3ODM1/9116670213_def7631855_o.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    object-fit: contain;
+}
+
+.bgo2C {
+    background-image: url("https://capturetheatlas.com/wp-content/uploads/2020/11/Ride-the-Banff-Gondola-activities-in-Banff.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    object-fit: contain;
+}
+
+.bgo3C {
+
+    background-image: url("https://cdn.naturettl.com/wp-content/uploads/2019/08/30184905/Photographing-Sunrises-and-Sunsets-3-900x675.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    object-fit: contain;
+}
+
+.bgo4C {
+
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/880/485/314/photography-of-green-grass-field-under-white-sky-italy-italy-wallpaper-preview.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    object-fit: contain;
+}
+
+
+.bgo5C {
+    background-image: url("https://lesolivagant.files.wordpress.com/2014/10/central-park.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    object-fit: contain;
+}
+
+.container_paragraphC {
+
+    color: white;
+    font-size: 24px;
+}
+
+.goodLuckC {
+
+    color: white;
+    font-size: 42px;
+    font-weight: bold;
+    font-family: BlinkMacSystemFont,
+        Helvetica,
+        Arial,
+        sans-serif;
+}
+
+.cols {
+    background: transparent;
+    color: white;
+}
+
+#difficultyPage {
+
+    background: transparent;
+    cursor: default;
+}
+
+#gameBoard {
+
+    background: transparent;
+    cursor: pointer;
+}
+
+.hover:hover {
+
+    background-color: rgba(255, 255, 255, 0.164);
+    border: solid 1px white;
+    color: white;
+}
+
+.welcomePlayerNameSpanC {
+
+    color: rgb(255, 255, 255);
+    font-size: 80px;
+    margin-top: 16px;
+    font-weight: bold;
+    font-family: BlinkMacSystemFont,
+        Helvetica,
+        Arial,
+        sans-serif;
+}
+
+.LevelDifficultySpanC {
+
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    margin-top: 40px;
+    font-weight: bold;
+    font-family: BlinkMacSystemFont,
+        Helvetica,
+        Arial,
+        sans-serif;
+}
+
+.difBts {
+
+    background: transparent;
+    margin-top: 50px;
+    width: 80px;
+    color: white;
+    cursor: pointer;
+    margin-right: 3%;
+    margin-left: 3%;
+    font-size: 20px;
+    border-radius: 25px;
+}
+
+.rowl div {
+
+    width: 40px;
+    height: 40px;
+    font-size: large;
+}
+
+.he-30 {
+
+    height: 30px;
+}
+
+.gameBtns {
+
+    width: 90px;
+    border-radius: 25px !important;
+    color: white;
+}
+
+.hide {
+
+    display: none !important;
+}
+
+.circles {
+
+    background: transparent;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    margin-right: 0.13%;
+    margin-left: 0.13%;
+}
+
+.target {
+
+    background-color: rgba(161, 9, 172, 0.5);
+    color: black;
+}
+
+.set {
+
+    background-color: rgba(0, 123, 255, 0.5);
+    cursor: default;
+}
+
+.gbg {
+    background-color: rgba(123, 255, 0, 0.5);
+}
+
+.rbg {
+    background-color: rgba(255, 0, 80, 0.5);
+}
+
+
+.r1s1,
+.r1s2,
+.r1s3,
+.r1s4,
+.r1s5,
+.r1s6,
+.r1s7,
+.r1s8,
+.r1s9,
+.r4s1,
+.r4s2,
+.r4s3,
+.r4s4,
+.r4s5,
+.r4s6,
+.r4s7,
+.r4s8,
+.r4s9,
+.r7s1,
+.r7s2,
+.r7s3,
+.r7s4,
+.r7s5,
+.r7s6,
+.r7s7,
+.r7s8,
+.r7s9 {
+
+    border-top: solid 1px rgb(255, 255, 255);
+}
+
+.r3s1,
+.r3s2,
+.r3s3,
+.r3s4,
+.r3s5,
+.r3s6,
+.r3s7,
+.r3s8,
+.r3s9,
+.r6s1,
+.r6s2,
+.r6s3,
+.r6s4,
+.r6s5,
+.r6s6,
+.r6s7,
+.r6s8,
+.r6s9,
+.r9s1,
+.r9s2,
+.r9s3,
+.r9s4,
+.r9s5,
+.r9s6,
+.r9s7,
+.r9s8,
+.r9s9 {
+    border-bottom: solid 1px rgb(255, 255, 255);
+}
+
+.r1s3,
+.r2s3,
+.r3s3,
+.r4s3,
+.r5s3,
+.r6s3,
+.r7s3,
+.r8s3,
+.r9s3,
+.r1s6,
+.r2s6,
+.r3s6,
+.r4s6,
+.r5s6,
+.r6s6,
+.r7s6,
+.r8s6,
+.r9s6,
+.r1s9,
+.r2s9,
+.r3s9,
+.r4s9,
+.r5s9,
+.r6s9,
+.r7s9,
+.r8s9,
+.r9s9 {
+
+    border-right: solid 1px rgb(255, 255, 255);
+}
+
+.r1s1,
+.r2s1,
+.r3s1,
+.r4s1,
+.r5s1,
+.r6s1,
+.r7s1,
+.r8s1,
+.r9s1,
+.r1s4,
+.r2s4,
+.r3s4,
+.r4s4,
+.r5s4,
+.r6s4,
+.r7s4,
+.r8s4,
+.r9s4,
+.r1s7,
+.r2s7,
+.r3s7,
+.r4s7,
+.r5s7,
+.r6s7,
+.r7s7,
+.r8s7,
+.r9s7 {
+
+    border-left: solid 1px rgb(255, 255, 255);
+}
+
+.r1s1,
+.r1s2,
+.r2s1,
+.r2s2,
+.r3s1,
+.r3s2,
+.r4s1,
+.r4s2,
+.r5s1,
+.r5s2,
+.r6s1,
+.r6s2,
+.r7s1,
+.r7s2,
+.r8s1,
+.r8s2,
+.r9s1,
+.r9s2,
+.r1s4,
+.r1s5,
+.r2s4,
+.r2s5,
+.r3s4,
+.r3s5,
+.r4s4,
+.r4s5,
+.r5s4,
+.r5s5,
+.r6s4,
+.r6s5,
+.r7s4,
+.r7s5,
+.r8s4,
+.r8s5,
+.r9s4,
+.r9s5,
+.r1s7,
+.r1s8,
+.r2s7,
+.r2s8,
+.r3s7,
+.r3s8,
+.r4s7,
+.r4s8,
+.r5s7,
+.r5s8,
+.r6s7,
+.r6s8,
+.r7s7,
+.r7s8,
+.r8s7,
+.r8s8,
+.r9s7,
+.r9s8 {
+
+    border-right: solid 1px rgb(175, 175, 175);
+}
+
+.r1s1,
+.r1s2,
+.r1s3,
+.r2s1,
+.r2s2,
+.r2s3,
+.r4s1,
+.r4s2,
+.r4s3,
+.r5s1,
+.r5s2,
+.r5s3,
+.r7s1,
+.r7s2,
+.r7s3,
+.r8s1,
+.r8s2,
+.r8s3,
+.r1s4,
+.r1s5,
+.r1s6,
+.r2s4,
+.r2s5,
+.r2s6,
+.r4s4,
+.r4s5,
+.r4s6,
+.r5s4,
+.r5s5,
+.r5s6,
+.r7s4,
+.r7s5,
+.r7s6,
+.r8s4,
+.r8s5,
+.r8s6,
+.r1s7,
+.r1s8,
+.r1s9,
+.r2s7,
+.r2s8,
+.r2s9,
+.r4s7,
+.r4s8,
+.r4s9,
+.r5s7,
+.r5s8,
+.r5s9,
+.r7s7,
+.r7s8,
+.r7s9,
+.r8s7,
+.r8s8,
+.r8s9 {
+
+    border-bottom: solid 1px rgb(175, 175, 175);
+}
+
+
+/* for mobile phones: */
+
+@media (max-width: 500px) {
+
+    .welcomeSpanC {
+        text-align: center;
+        font-size: 42px;
+
+    }
+
+    .upper_sectionC {
+        position: relative;
+        align-self: none;
+        height: 100px;
+    }
+
+    .ChangeBackgroundSpanC {
+        position: relative;
+        right: 60px;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .AboutTheGameSpanC {
+        font-size: 14px;
+        position: relative;
+        right: 100px;
+        text-align: center;
+        /* top: 16px; */
+    }
+
+    .EnterbtnC {
+        font-size: 14px;
+        font-weight: bold;
+        height: 30px;
+    }
+
+    .images {
+        height: 75px;
+    }
+
+    .container_paragraphC {
+        position: relative;
+        font-size: 14px;
+        top: -90px;
+    }
+
+    .goodLuckC {
+        font-size: 42px;
+        font-weight: bold;
+
+    }
+
+    .welcomePlayerNameSpanC {
+        font-size: 42px;
+        margin-top: 16px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .LevelDifficultySpanC {
+        font-size: 30px;
+        margin-top: 20px;
+        font-weight: bold;
+    }
+
+    .photoSelectNavC {
+
+        position: relative;
+        top: -20px;
+    }
+
+    .difBts {
+        margin-top: 30px;
+        width: 80px;
+        margin-right: 3%;
+        margin-left: 3%;
+        font-size: 20px;
+    }
+
+    .mainC {
+        position: relative;
+        top: -60px;
+    }
+}
