@@ -5,4 +5,4 @@ You can login using, Username: abcd, Password: 1234
 
 https://mahmoudkharbat.github.io/Nature-Sudoku/
 
-<img src = 'Illustration_Images/Screenshot%20(45).png' />
+<img src = 'Illustration_Images/page1.png' />
