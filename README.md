@@ -1,13 +1,17 @@
 # Nature-Sudoku
 
-Hello and welcome to my humble sudoku game, this project was my first front end project.\n
+Hello and welcome to my humble sudoku game, this project was my first front end project.
+
 The site was built using html, css, javascript.
+
 You can try the game using the following link:
 
 https://mahmoudkharbat.github.io/Nature-Sudoku/
 
 you can login using this account:
+
 username: abcd
+
 password: 1234
 
 
