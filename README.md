@@ -1,6 +1,6 @@
 # Nature-Sudoku
 
-Hello and welcome to my humble sudoku game, this project was my first front end project.
+Hello and welcome to my humble sudoku game, this project was my first front end project.\n
 The site was built using html, css, javascript.
 You can try the game using the following link:
 
